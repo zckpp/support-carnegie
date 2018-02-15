@@ -5,6 +5,9 @@ core = 7.x
 
 base theme = startupgrowth
 
+
+stylesheets[all][] = CSS/font-awesome.min.css
+stylesheets[all][] = CSS/font-awesome-animation.min.css
 stylesheets[all][] = CSS/front.css
 stylesheets[all][] = CSS/ciw.css
 
