@@ -77,10 +77,11 @@ table td {
     margin-top: 40px;
     position: relative;  }
 #page-container nav a {
+    font-size: 20px;
     color: black; }
-@media screen and (max-width: 993px) {
-    #page-container nav {
-        width: 100%; } }
+/*@media screen and (max-width: 993px) {*/
+    /*#page-container nav {*/
+        /*width: 100%; } }*/
 #page-container nav bar-nav {
     float: left !important;
     margin: 0 20px;
@@ -145,6 +146,11 @@ ul.menu li a {
     -webkit-box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+ul.sf-menu.sf-accordion.sf-expanded {
+    display: block;
+    position: absolute;
+    top: 40px !important;
 }
 /*search area*/
 input.form-text, textarea, select {
@@ -242,6 +248,9 @@ ol.search-results div.col-md-8.fadein {
     margin-left: 40px;
     top: 5px;
     font-size: 1.5em; }
+@media screen and (max-width: 768px) {
+    .header span {
+        display: none; } }
 .header .btn {
     position: absolute;
     right: 71px;
@@ -330,7 +339,19 @@ footer {
     font-family: "Roboto Slab";
     font-size: 1.5em;
 }
-
+ html, body.not-front {
+     height: 100%;
+ }
+/*set container*/
+#page-container {
+    min-height: 100%;
+    margin-bottom: -170px;
+}
+#page-container:after {
+    content: "";
+    display: block;
+    height: 170px;
+}
 
 /*.fastLinks {*/
     /*text-align: center; }*/
@@ -378,7 +399,6 @@ footer {
     /*margin-top: 30px; }*/
 
 .front section.container {
-    /*background: url(/sites/all/themes/startupgrowth_ciw/image/map.png);*/
     min-height: 700px; }
 
 footer .top-bg {
@@ -391,7 +411,7 @@ footer .top-bg {
 }
 body.not-front {
     position: relative;
-    height: auto;
+
 }
 .not-front #footer {
     position: absolute;
@@ -491,7 +511,7 @@ ul.sf-menu>li>a.menuparent:after {
     content: "\f107";
     font-family: 'FontAwesome';
     position: absolute;
-    top: 13px;
+    top: 18px;
     right: -1px;
     font-size: 12px;
     font-weight: 400;
@@ -511,11 +531,12 @@ body #page-container nav li a {
 }
 .sf-accordion-toggle span {
     font-size: 30px;
-}
-@media screen and (max-width: 768px) {
-    #page-container nav {
-        width: 100%;
-    }
+    float: right;
+    -webkit-transform: scale(1.4,1);
+    -moz-transform: scale(1.4,1);
+    -ms-transform: scale(1.4,1);
+    -o-transform: scale(1.4,1);
+    transform: scale(1.4,1);
 }
 /*db search override*/
 .page-dbsearch .header,
@@ -689,7 +710,7 @@ body #page-container nav li a {
     font-size: 20px;
 }
 .bell {
-    transform: translateX(15%) rotateZ(-7deg) scale(0.8);
+    transform: translateX(5%) rotateZ(-7deg) scale(0.8);
     border: 7px solid white;
     border-radius: 10px;
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 9px 23px 0 rgba(0, 0, 0, 0.19);
@@ -699,7 +720,10 @@ body #page-container nav li a {
         display: none;
     }
 }
-
+/*Hide account register*/
+.not-logged-in .tabs.primary {
+    display: none;
+}
 
 
 

@@ -5,15 +5,11 @@ core = 7.x
 
 base theme = startupgrowth
 
-
+stylesheets[all][] = CSS/slick.css
 stylesheets[all][] = CSS/font-awesome.min.css
 stylesheets[all][] = CSS/font-awesome-animation.min.css
 stylesheets[all][] = CSS/front.css
 stylesheets[all][] = CSS/ciw.css
-
-
-
-scripts[] = JS/ciw.js
 
 regions[header] = Header
 regions[navigation] = Navigation
@@ -70,3 +66,8 @@ settings[google_map_zoom]= 13
 settings[google_map_canvas]= 'map-canvas'
 settings[google_map_js]= 1
 settings[isotope_layout]= 'masonry'
+
+
+
+scripts[] = JS/slick.js
+scripts[] = JS/ciw.js
