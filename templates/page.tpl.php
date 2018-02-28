@@ -44,8 +44,6 @@
     <!-- EOF:#banner -->
     <?php endif; ?>
 
-    <?php include 'includes/internal-banner.inc'; ?>
-
     <!-- #page -->
     <div id="page" class="clearfix">
 

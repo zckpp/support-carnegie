@@ -59,12 +59,6 @@ settings[responsive_menu_nested]= 1
 settings[responsive_multilevelmenu_state]= 0
 settings[parallax_state]= 0
 settings[parallax_opacity]= '80'
-settings[google_map_key]= 'AIzaSyDyL-4KyWw_3hp-0jmZLGcJ3zMWkkJ44VI'
-settings[google_map_latitude]='40.726576'
-settings[google_map_longitude]='-74.046822'
-settings[google_map_zoom]= 13
-settings[google_map_canvas]= 'map-canvas'
-settings[google_map_js]= 1
 settings[isotope_layout]= 'masonry'
 
 
