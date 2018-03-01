@@ -445,7 +445,7 @@ ul.sf-menu>li>a.menuparent:after {
     content: "\f107";
     font-family: 'FontAwesome';
     position: absolute;
-    top: 18px;
+    top: 16px;
     right: -1px;
     font-size: 12px;
     font-weight: 400;
@@ -462,6 +462,7 @@ ul.sf-menu>li>a.menuparent:after {
 }
 body #page-container nav li a {
     background-color: white;
+    opacity: 0.9;
 }
 .sf-accordion-toggle span {
     font-size: 30px;
@@ -484,6 +485,9 @@ body #page-container nav li a {
 .page-dbsearch #page,
 .page-dbsearch.not-front #main {
     padding-top: 0;
+}
+.front .modal-body iframe {
+    max-width: 100%;
 }
 /*legal form*/
 @media (min-width: 768px) {

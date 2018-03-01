@@ -1,8 +1,4 @@
 (function ($) {
-    // change search button to find
-    // $( document ).ready(function () {
-    //     $('#edit-submit').val('Find');
-    // })
 
     // one time animation when page load
     $(window).load(function() {
@@ -19,6 +15,28 @@
                 $(".form-item-name, .form-item-pass, #edit-submit").addClass("collapse");
                 $( '<button class="btn btn-info" type="button" data-toggle="collapse" data-target=".collapse" aria-expanded="false">Login As Admin</button>' ).insertAfter($( "#user-login > div" ));
         }
+
+        //top nav people finder modal
+        if ($('#peopleFinder')) {
+            $('#peopleFinder').attr({"data-toggle":"modal", "data-target":"#myModal", "href":"javascript:void(0)"});
+        }
+
+        //click outside menu to close
+        $('html').click(function () {
+            var menu = $('ul.sf-menu');
+            if (menu.hasClass('sf-expanded')) {
+                menu.removeClass('sf-expanded');
+                menu.addClass('sf-hidden');
+            }
+        });
+        //if click on the menu or toggle button do not close, bind event to menu block instead of toggle button because it needs click to toggle
+        $('div.block-superfish').click(function (e) {
+            e.stopPropagation();
+        //Can only bind one object at a time
+        });
+        $('ul.sf-menu a').click(function (e) {
+            e.stopPropagation();
+        });
 
     });
 
