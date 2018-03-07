@@ -4,27 +4,7 @@
 
 
     <!-- #header -->
-    <div class="header-wrapper clearfix ">
-        <div class="header col-md-6 col-sm-6 col-xs-6">
-
-            <a href="<?php global $base_url; print $base_url;?>"><img src="<?php print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/logo_solid.png" /></a>
-
-            <span>MyCarnegie</span>
-
-            <a href="#" id="pull"></a>
-        </div>
-
-        <nav class="menu col-md-6 col-sm-6 col-xs-6">
-            <?php if ($page['navigation']) :?>
-                <?php print render($page['navigation']); ?>
-            <?php else : ?>
-                <div id="main-menu">
-                    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main-menu', 'menu'), ), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => array('element-invisible'), ), )); ?>
-                </div>
-            <?php endif; ?>
-        </nav>
-    </div>
-
+    <?php include 'header.tpl.php'; ?>
     <!-- EOF: #header -->
 
 
@@ -51,7 +31,7 @@
 
         <section class="container">
 
-            <div class="test">
+            <div class="slide-homepage">
                 <img src="<?php global $base_url; print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/mycarnegie.jpg" />
                 <img src="<?php global $base_url; print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/mycarnegie2.jpg" />
                 <img src="<?php global $base_url; print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/mycarnegie3.jpg" />
@@ -77,6 +57,15 @@
                     </ul>
 
                 </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+        <section class="latest-article">
+            <div class="container">
+                <?php $block = module_invoke('views', 'block_view', 'latest_article-block'); print render($block['content']); ?>
             </div>
         </section>
 
@@ -111,73 +100,12 @@
 </div>
 <!-- EOF:#page-container -->
 
-<footer class="footer">
-    <div class="container Footer">
-        <div class="row">
-            <div class="footer-image col-md-5 col-sm-3">
-                <a href="<?php print $base_url;?>"><img src="<?php print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/logo_solid.png" /></a>
-
-                <span>MyCarnegie</span></div>
-            <div class="footer-list col-md-2 col-sm-4 col-xs-4">
-                <ul class="footer-menu">
-                    <li>
-                        <strong>MENU</strong>
-                    </li>
-                    <li>
-                        <a>About us</a>
-                    </li>
-                    <li>
-                        <a>Term of Service</a>
-                    </li>
-                    <li>
-                        <a>Private Policy</a>
-                    </li>
-                    <li>
-                        <a>Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-list col-md-2 col-sm-4 col-xs-4">
-                <ul class="footer-menu">
-                    <li>
-                        <strong>FOLLOW US</strong>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.instagram.com/carnegiescience"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i>Instagram</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/carnegiescience/"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i>Facebook</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://twitter.com/carnegiescience"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i>Twitter</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-list col-md-3 col-sm-4 col-xs-4">
-                <ul class="footer-menu">
-                    <li>
-                        <strong>GET IN TOUCH</strong>
-                    </li>
-                    <li>
-                        <i class="fa fa-phone fa-fw" aria-hidden="true"></i><a>phone number</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i><a>Email</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-location-arrow fa-fw" aria-hidden="true"></i><a>Address</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</footer>
+<?php include 'footer.tpl.php'; ?>
 
 <script>
     (function ($) {
-        if ($('.test').length != 0){
-            $('.test').slick({
+        if ($('.slide-homepage').length != 0){
+            $('.slide-homepage').slick({
                 arrows: false,
                 infinite: true,
                 speed: 500,

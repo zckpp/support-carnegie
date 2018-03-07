@@ -229,6 +229,11 @@ ol.search-results div.col-md-8.fadein {
     box-sizing: content-box;
     margin-top: 5px;
     padding-right: 25px; }
+@media screen and (max-width: 499px) {
+    .header img {
+        width: 140px;
+        margin-top: 20px;  }
+}
 .header span {
     color: #153571;
     font-family: "Roboto Slab";
@@ -340,9 +345,6 @@ footer {
     display: block;
     height: 170px;
 }
-.front section.container {
-    min-height: 700px; }
-
 footer .top-bg {
     top: 0px; }
 .search img {
@@ -689,5 +691,32 @@ input[type="submit"].collapse.in {
 }
 .page-user-login input.form-text {
     padding: 10px 15px;
+}
+/*latest article seciton*/
+section.latest-article {
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+.latest-article .view-content .wrapper {
+    padding: 30px;
+    margin: 25px;
+    background-color: white;
+    min-height: 190px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    border-bottom: 2px solid #3b5da5;
+    -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+.latest-article .view-content .wrapper:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.front footer {
+    background-color: white;
 }
 

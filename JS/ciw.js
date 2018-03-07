@@ -38,6 +38,12 @@
             e.stopPropagation();
         });
 
+        // click card to invoke link inside
+        $('.latest-article .view-content .wrapper').click(function (e) {
+            e.stopPropagation();
+            $(this).children().last().find('a')[0].click();
+        })
+
     });
 
 }(jQuery));
