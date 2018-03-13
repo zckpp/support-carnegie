@@ -1,5 +1,5 @@
 <div class="header-wrapper clearfix ">
-    <div class="header col-md-6 col-sm-6 col-xs-6">
+    <div class="header col-md-5 col-sm-5 col-xs-6">
 
         <a href="<?php global $base_url; print $base_url;?>"><img src="<?php print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/logo_solid.png" /></a>
 
@@ -8,7 +8,7 @@
         <a href="#" id="pull"></a>
     </div>
 
-    <nav class="menu col-md-6 col-sm-6 col-xs-6">
+    <nav class="menu col-md-7 col-sm-7 col-xs-6">
         <?php if ($page['navigation']) :?>
             <?php print render($page['navigation']); ?>
         <?php else : ?>

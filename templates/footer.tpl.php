@@ -6,23 +6,6 @@
 
                 <span>MyCarnegie</span></div>
             <div class="footer-list col-md-2 col-sm-4 col-xs-4">
-                <ul class="footer-menu">
-                    <li>
-                        <strong>MENU</strong>
-                    </li>
-                    <li>
-                        <a>About us</a>
-                    </li>
-                    <li>
-                        <a>Term of Service</a>
-                    </li>
-                    <li>
-                        <a>Private Policy</a>
-                    </li>
-                    <li>
-                        <a>Contact</a>
-                    </li>
-                </ul>
             </div>
             <div class="footer-list col-md-2 col-sm-4 col-xs-4">
                 <ul class="footer-menu">

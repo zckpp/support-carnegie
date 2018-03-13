@@ -35,7 +35,17 @@ function startupgrowth_ciw_preprocess_page(&$vars, $hook) {
 
     }
 
+}
 
+//add user role to body class
+function startupgrowth_ciw_preprocess_html(&$vars) {
+    global $user;
+    if ($user->roles) {
+        foreach ($user->roles as $key => $value) {
+                $role_class = 'role-' . drupal_clean_css_identifier($value);
+                $vars['classes_array'][] = $role_class;
+        }
+    }
 }
 
 function startupgrowth_ciw_preprocess_search_result(&$variables) {

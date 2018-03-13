@@ -1,0 +1,107 @@
+.responsive-menus {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  font-family: 'Roboto Slab', serif;
+}
+@media screen and (min-width: 769px) {
+  .responsive-menus {
+    position: relative;
+    top: 0;
+  }
+}
+
+.hr-container nav {
+  min-height: 60px;
+  margin-bottom: 10px;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.75);
+}
+.hr-container nav a {
+  color: black;
+}
+@media screen and (max-width: 993px) {
+  .hr-container nav {
+    width: 100%;
+  }
+}
+.hr-container nav .navbar-nav {
+  margin-left: 21%;
+  margin-right: 10%;
+  transition: all 0.3s ease 0s;
+}
+@media screen and (max-width: 1200px) {
+  .hr-container nav .navbar-nav {
+    margin-left: 26%;
+    margin-right: 15%;
+  }
+}
+@media screen and (max-width: 993px) {
+  .hr-container nav .navbar-nav {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    margin: 0;
+    top: 60px;
+    box-shadow: 0 0 6px #000;
+    width: 100%;
+  }
+}
+.hr-container nav .navbar-nav.active {
+  display: block;
+}
+@media screen and (max-width: 993px) {
+  .hr-container nav .navbar-nav li.dropdown {
+    width: 100%;
+    border-bottom: 1px solid #555;
+  }
+}
+.hr-container nav .navbar-nav li.dropdown .dropdown-menu {
+  box-shadow: none;
+}
+@media screen and (max-width: 993px) {
+  .hr-container nav .navbar-nav li.dropdown .dropdown-menu {
+    position: relative;
+    width: 100%;
+  }
+}
+
+nav:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.header {
+  position: relative;
+  z-index: 999;
+}
+.header #pull {
+  background: url(/sites/default/files/image/menu_icon.png) no-repeat scroll 0 0 transparent;
+  content: "";
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  width: 30px;
+}
+@media screen and (min-width: 993px) {
+  .header #pull {
+    display: none;
+  }
+}
+.header img {
+  width: 250px;
+  position: absolute;
+  left: 25px;
+}
+.header .btn {
+  position: absolute;
+  right: 71px;
+  top: 8px;
+}
+
+/*# sourceMappingURL=header.css.map */

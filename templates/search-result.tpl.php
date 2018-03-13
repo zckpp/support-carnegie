@@ -75,7 +75,7 @@
         <?php print render($full['field_email']);?>
         <?php print render($full['field_phone']);?>
         <?php print render($full['field_department']);?>
-        <?php print render($full['field_manager']);?>
+<!--        --><?php //print render($full['field_manager']);?>
 
       </div>
   </div>

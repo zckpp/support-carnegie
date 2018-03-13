@@ -1,0 +1,106 @@
+/*homepage*/
+.front {
+  @media (min-width: 1200px) {
+    .landing-container {
+      height: 100vh;
+      overflow: hidden;
+    }
+  }
+  .landingBanner {
+    color: white;
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1px 10px 10px;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin-top: -100px;
+    &:after {
+      background-color: #6bbed2;
+      opacity: 0.7;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  /*fast links*/
+  .fastLinks {
+    h1 {
+      font-family: 'Roboto Slab', serif;
+    }
+    ul {
+      max-width: 350px;
+      list-style-type: decimal;
+      padding: 10px 15px 20px 30px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      a {
+        color: black;
+        font-weight: bold;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      li {
+        padding: 8px 0;
+        border-bottom: 1px solid lightgrey;
+      }
+      a:last-of-type li {
+        border-bottom: none;
+      }
+      i {
+        float: right;
+        color: green;
+        font-size: 20px;
+      }
+    }
+  }
+  //big peoplefinder icon
+  .bell {
+    border: 7px solid white;
+    border-radius: 10px;
+    max-width: 320px;
+    -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    a {
+      display: block;
+      text-align: center;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 9px 23px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+  /*latest article seciton*/
+  section.latest-article {
+    background-color: #f2f2f2;
+    padding: 30px;
+    .view-content .wrapper {
+      padding: 30px;
+      margin: 25px;
+      background-color: white;
+      min-height: 190px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px;
+      border-bottom: 2px solid #3b5da5;
+      -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+      }
+    }
+  }
+  footer {
+    background-color: white;
+  }
+}

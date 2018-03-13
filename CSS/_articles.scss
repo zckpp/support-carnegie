@@ -1,0 +1,217 @@
+/*matrix page*/
+.page-node-3975 {
+  .project-list {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: #e9edee;
+    color: #000000;
+    cursor: pointer;
+    margin-bottom: 20px;
+    h2 {
+      padding: 10px;
+      font-family: Lato;
+    }
+    &:hover {
+      background: #d7ddde;
+    }
+    &.active {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px;
+      -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+      background: #d7ddde;
+      color: #000000;
+    }
+  }
+  .project-list-content {
+    display: none;
+    font-family: Lato;
+  }
+}
+/*Login Page*/
+.not-logged-in .tabs.primary {
+  display: none;
+}
+.page-user-login {
+  ul.saml_sp_drupal_login-links {
+    list-style-type: none;
+    padding: 0;
+    a {
+      font-size: 18px;
+      padding: 15px 23px;
+      background-color: #2a68af;
+      color: #ffffff;
+      display: inline-block;
+      line-height: 1;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      min-width: 160px;
+      border: none;
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  input[type="submit"].collapse {
+    display: none;
+    &.in {
+      display: block;
+    }
+  }
+  input.form-text {
+    padding: 10px 15px;
+  }
+}
+/*Webform for rentals*/
+.node-type-webform {
+  #block-system-main {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+  }
+  input.form-text, textarea, select {
+    width: auto;
+    border-radius: 10px;
+    padding: 5px 15px;
+  }
+  .form-item, .form-actions {
+    display: inline;
+  }
+}
+/*IT dashboard*/
+.page-node-3179 {
+  .header .circle {
+    border-radius: 0;
+    background: white;
+    border: 1px solid gray;
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    &.color {
+      border-radius: 0;
+      background: lightgreen;
+      border: none;
+    }
+  }
+  .list-group-item {
+    background: lightgreen;
+    &.first {
+      background: white;
+    }
+  }
+  .list-group {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 30px;
+  }
+  @media (min-width: 1400px) {
+    .container {
+      width: 1400px;
+    }
+  }
+}
+/*legal form*/
+@media (min-width: 768px) {
+  .page-node-3177 .modal-dialog {
+    width: 800px;
+  }
+}
+
+#dvFastForms {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  label {
+    display: inline;
+  }
+  .ff-form-main {
+    max-width: 100%;
+    .ff-page-row {
+      max-width: 100%;
+      .ff-group-row {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 35%;
+        padding-bottom: 40px;
+        &:nth-of-type(odd) {
+          background: #fbfbdd;
+        }
+      }
+    }
+    .ff-footer-row {
+      padding-left: 20px;
+    }
+    select, input {
+      border: 1px solid #c5dee4;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+    textarea {
+      background: white;
+      border: 1px solid #c5dee4;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -o-border-radius: 5px;
+      padding: 5px 15px;
+      height: 150px;
+    }
+    input {
+      padding: 5px 15px;
+    }
+    .ff-group-row > .ff-item-row {
+      margin-top: 15px;
+    }
+    #btnsubmit {
+      border: none;
+      display: block;
+      background-color: #213870;
+    }
+    .ff-form-main a.lookup-link {
+      width: 240px;
+    }
+  }
+}
+.ff-ui-dialog .ff-ui-dialog-buttonpane button {
+  border: none;
+  display: block;
+  background-color: #213870;
+  color: white;
+  padding: 5px 10px;
+}
+
+#dvFastForms.ff-ui-dialog {
+  left: 50% !important;
+}
+.ff-group-row.group-3 .ff-item-row {
+  &:last-of-type, &:nth-last-of-type(2) {
+    opacity: 0;
+  }
+}
+

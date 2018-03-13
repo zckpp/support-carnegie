@@ -1,0 +1,69 @@
+/*search result*/
+
+.search-form {
+  margin: 20px 10px 50px 0;
+}
+
+.search-results {
+  padding-left: 0;
+  .field-type-image {
+    margin: 0;
+  }
+}
+
+.page-custom-node-search {
+  .search-results {
+    padding-left: 0;
+    margin-top: 50px;
+    min-height: 300px;
+    .search-snippet-info {
+      padding-left: 0;
+    }
+  }
+  .col-md-8 h2 {
+    margin-bottom: 30px;
+    * {
+      display: inline;
+    }
+  }
+}
+
+.field-name-field-frist-name, .field-name-field-user-first-name {
+  float: left;
+  margin-right: 10px;
+}
+
+.copyright {
+  background-color: #001523;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  p {
+    font-size: 14px;
+  }
+}
+
+/*db search override*/
+
+.page-ldap-search {
+  .header, .top-bg, nav, footer, #page-title, .node-people header {
+    display: none;
+  }
+  #page, &.not-front #main {
+    padding-top: 0;
+  }
+  article.node-person {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0 0 30px 10px;
+  }
+}
+
+.front .modal-body iframe {
+  max-width: 100%;
+}
+
+.field-type-taxonomy-term-reference {
+  font-size: 16px;
+}

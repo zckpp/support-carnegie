@@ -1,0 +1,27 @@
+/*Person page*/
+.node-type-person article {
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+.node-type-person .field {
+  font-size: 1.2em;
+}
+.node-type-person h3.field {
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+.node-type-person .field-name-field-user-first-name {
+  float: none;
+}
+.node-teaser .field-type-image img {
+  border: none;
+}
+.node-type-person footer,
+.role-authenticated-user.page-node-edit.node-type-person div.form-item-title,
+.role-authenticated-user.page-node-edit.node-type-person .vertical-tab-button.last,
+.role-authenticated-user.page-node-edit.node-type-person #edit-draft {
+  display: none;
+}
