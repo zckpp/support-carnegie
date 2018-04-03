@@ -83,7 +83,20 @@ table {
     border: 1px solid #e9edee !important;
   }
 }
-
+//disabled link
+@media screen and (min-width: 768px) {
+  .menuParent {
+    pointer-events: none;
+    cursor: pointer;
+  }
+}
+body #page-container nav li a.isDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+  color: grey;
+}
 .block-title {
   font-size: 36px;
   text-transform: uppercase;
@@ -92,11 +105,11 @@ table {
 
 #page-container {
   min-height: 100%;
-  margin-bottom: -170px;
+  margin-bottom: -147px;
   &:after {
     content: "";
     display: block;
-    height: 170px;
+    height: 147px;
   }
 }
 

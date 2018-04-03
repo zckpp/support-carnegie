@@ -59,6 +59,14 @@
       }
     }
   }
+  //calendar
+  .view-calendar {
+    .views-row-1 {
+      h4 {
+        margin-top: 0;
+      }
+    }
+  }
   //big peoplefinder icon
   .bell {
     border: 7px solid white;
@@ -74,6 +82,9 @@
     &:hover {
       cursor: pointer;
       box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 9px 23px 0 rgba(0, 0, 0, 0.19);
+    }
+    img {
+      max-width: 220px;
     }
   }
   /*latest article seciton*/
@@ -98,6 +109,9 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         cursor: pointer;
       }
+    }
+    h3 {
+      margin-top: 0;
     }
   }
   footer {

@@ -1,50 +1,39 @@
 /*matrix page*/
-.page-node-3975 {
-  .project-list {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
+.project-list {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #e9edee;
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 20px;
+  h2 {
+    padding: 10px;
+    font-family: Lato;
+  }
+  &:hover {
+    background: #d7ddde;
+  }
+  &.active {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     border-radius: 4px;
-    background: #e9edee;
+    -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    background: #d7ddde;
     color: #000000;
-    cursor: pointer;
-    margin-bottom: 20px;
-    h2 {
-      padding: 10px;
-      font-family: Lato;
-    }
-    &:hover {
-      background: #d7ddde;
-    }
-    &.active {
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      -o-border-radius: 3px;
-      border-radius: 3px;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      -o-border-radius: 4px;
-      border-radius: 4px;
-      -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
-      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
-      background: #d7ddde;
-      color: #000000;
-    }
-  }
-  .project-list-content {
-    display: none;
-    font-family: Lato;
   }
 }
+.project-list-content {
+  display: none;
+  font-family: Lato;
+}
+
 /*Login Page*/
 .not-logged-in .tabs.primary {
   display: none;
@@ -98,6 +87,10 @@
   .form-item, .form-actions {
     display: inline;
   }
+}
+//date picker width override
+#ui-datepicker-div {
+  min-width: 350px;
 }
 /*IT dashboard*/
 .page-node-3179 {
@@ -214,4 +207,24 @@
     opacity: 0;
   }
 }
-
+//visitor log dashboard
+table.logDashboard {
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  td {
+    border: none;
+  }
+  tr {
+    border-top: 1px solid rgb(150,202,79);
+  }
+  thead {
+    background-color: rgb(150,202,79);
+    color: white;
+    opacity: 0.9;
+  }
+  tbody {
+    background-color: white;
+    opacity: 0.9;
+  }
+}

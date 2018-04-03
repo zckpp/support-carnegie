@@ -38,7 +38,6 @@ settings[scrolltop_display]= 1
 settings[frontpage_content_print]= 1
 settings[bootstrap_js_include]= 0
 settings[isotope_js_include]= 0
-settings[color_scheme]= 'default'
 settings[layout_mode]= 'wide'
 settings[fixed_header]= 1
 settings[form_style]= 'form-style-1'
@@ -58,7 +57,7 @@ settings[responsive_menu_nested]= 1
 settings[responsive_multilevelmenu_state]= 0
 settings[parallax_state]= 0
 settings[parallax_opacity]= '80'
-settings[isotope_layout]= 'masonry'
+settings[color_scheme] = 'blue'
 
 
 

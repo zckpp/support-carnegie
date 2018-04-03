@@ -1,7 +1,7 @@
 /*Header*/
 #page-container nav {
   margin-bottom: 10px;
-  margin-top: 40px;
+  margin-top: 30px;
   position: relative;
   a {
     font-size: 20px;
@@ -28,14 +28,6 @@
         transition: all 0.3s ease 0s;
       }
     }
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  #page-container nav {
-    margin-bottom: 10px;
-    margin-top: 33px;
-    position: relative;
   }
 }
 
@@ -195,24 +187,12 @@ ol.search-results div {
 .header {
   position: relative;
   z-index: 999;
-  padding: 20px 0;
+  padding: 10px 0;
   img {
     width: 240px;
     position: relative;
-    left: 25px;
-    /*border-right: 1px #cccccc solid;*/
     box-sizing: content-box;
     margin-top: 5px;
-    padding-right: 25px;
-  }
-  span {
-    color: #153571;
-    font-family: "Roboto Slab";
-    display: none;
-    position: relative;
-    margin-left: 40px;
-    top: 5px;
-    font-size: 1.5em;
   }
   .btn {
     position: absolute;
@@ -251,17 +231,28 @@ ol.search-results div {
     height: 10px;
   }
 }
+.menu {
+  .profilePhoto {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    z-index: 10;
+    @media screen and (max-width: 1020px) {
+      display: none;
+    }
+  }
+  //allow profile photo link to show
+  .region-navigation {
+    z-index: 9;
+  }
+}
 
 @media screen and (max-width: 499px) {
   .header img {
     width: 140px;
     margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 1040px) {
-  .header span {
-    display: none;
   }
 }
 /*menu*/
@@ -317,7 +308,7 @@ ul.sf-menu {
   }
 }
 
-ul.sf-menu > li > a.menuparent:after {
+ul.sf-menu li a.menuparent:after {
   content: "\f107";
   font-family: 'FontAwesome';
   position: absolute;
@@ -332,6 +323,9 @@ ul.sf-menu > li > a.menuparent:after {
   transition: all linear 0.2s;
   color: #000;
   line-height: 20px;
+}
+ul.sf-menu .sf-depth-2 a.menuparent:after {
+  right: 8px;
 }
 
 #page-container nav li > a {

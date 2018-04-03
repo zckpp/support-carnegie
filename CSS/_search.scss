@@ -48,7 +48,7 @@
 /*db search override*/
 
 .page-ldap-search {
-  .header, .top-bg, nav, footer, #page-title, .node-people header {
+  #page-title {
     display: none;
   }
   #page, &.not-front #main {

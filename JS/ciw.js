@@ -1,5 +1,4 @@
 (function ($) {
-
     // one time animation when page load
     $(window).load(function() {
         $('ol.search-results div.col-md-4, ol.search-results div.col-md-8').addClass("fadein");
@@ -16,9 +15,10 @@
                 $( '<button class="btn btn-info" type="button" data-toggle="collapse" data-target=".collapse" aria-expanded="false">Login As Admin</button>' ).insertAfter($( "#user-login > div" ));
         }
 
-        //top nav people finder modal
-        if ($('#peopleFinder')) {
-            $('#peopleFinder').attr({"data-toggle":"modal", "data-target":"#myModal", "href":"javascript:void(0)"});
+        // change search page language
+        if ($("body").hasClass("page-ldap-search")) {
+            $( ".content h1" ).text('Staff Directory');
+
         }
 
         //click outside menu to close
@@ -37,12 +37,16 @@
         $('ul.sf-menu a').click(function (e) {
             e.stopPropagation();
         });
-
         // click card to invoke link inside
         $('.latest-article .view-content .wrapper').click(function (e) {
             e.stopPropagation();
             $(this).children().last().find('a')[0].click();
         })
+        // click to refresh people finder iframe
+        // $('.front .close').click(function () {
+        //     var f = document.getElementById('peopleFinderIframe');
+        //     f.src = f.src;
+        // });
 
     });
 
