@@ -37,18 +37,22 @@
         $('ul.sf-menu a').click(function (e) {
             e.stopPropagation();
         });
+
         // click card to invoke link inside
         $('.latest-article .view-content .wrapper').click(function (e) {
             e.stopPropagation();
             $(this).children().last().find('a')[0].click();
         })
+
         // click to refresh people finder iframe
         // $('.front .close').click(function () {
         //     var f = document.getElementById('peopleFinderIframe');
         //     f.src = f.src;
         // });
 
+
     });
 
 }(jQuery));
+
 

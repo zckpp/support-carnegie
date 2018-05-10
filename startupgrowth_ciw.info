@@ -1,6 +1,6 @@
-name = Startup Growth - Carnegie Edition
-description = A subtheme of Startup Growth for Carnegie wide customizations to the theme
-version = 1.0a1
+name = Carnegie Intranet portal
+description = A subtheme of Startup Growth for Carnegie Intranet portal
+version = 1.0
 core = 7.x
 
 base theme = startupgrowth

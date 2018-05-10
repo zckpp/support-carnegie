@@ -6,6 +6,11 @@
       overflow: hidden;
     }
   }
+  section {
+    padding: 30px;
+    position: relative;
+  }
+  //welcome banner
   .landingBanner {
     color: white;
     width: 70%;
@@ -17,7 +22,7 @@
     text-align: center;
     margin-top: -100px;
     &:after {
-      background-color: #6bbed2;
+      background-color: #5eb6cd;
       opacity: 0.7;
       content: "";
       top: 0;
@@ -90,7 +95,6 @@
   /*latest article seciton*/
   section.latest-article {
     background-color: #f2f2f2;
-    padding: 30px;
     .view-content .wrapper {
       padding: 30px;
       margin: 25px;
@@ -112,6 +116,19 @@
     }
     h3 {
       margin-top: 0;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      -webkit-box-shadow: 0 0 15px rgba(0,0,0,.6);
+      box-shadow: 0 0 15px rgba(0,0,0,.6);
+      bottom: 0;
+      width: 94%;
+      height: 40px;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      left: 3%;
     }
   }
   footer {

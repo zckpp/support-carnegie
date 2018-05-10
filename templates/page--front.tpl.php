@@ -2,12 +2,15 @@
 <?php include 'includes/homepage.inc'; ?>
 <div id="page-container">
 
+    <?php if (theme_get_setting('scrolltop_display')): ?>
+        <div id="toTop"><i class="fa fa-angle-up"></i></div>
+    <?php endif; ?>
 
     <!-- #header -->
     <?php include 'header.tpl.php'; ?>
 
     <!--front page slideshow-->
-    <?php $block = module_invoke('md_slider', 'block_view', 'front-page'); if (!empty($block['content'])) {print render($block['content']);}  ?>
+    <?php $block = module_invoke('md_slider', 'block_view', 'md-slider-5ac4dfbb3f6b9'); if (!empty($block['content'])) {print render($block['content']);}  ?>
     <div class="landingBanner">
         <h1>Welcome to My Carnegie Portal</h1>
     </div>
@@ -69,10 +72,9 @@
                 </div>
             </div>
         </section>
+        <!--link section ends-->
 
-        <br>
-        <br>
-
+        <!--Latest Article section-->
         <section class="latest-article">
             <div class="container">
                 <h1 style="padding-left: 10px;">INSIDE CARNEGIE</h1>
@@ -83,30 +85,10 @@
         </section>
 
         <br>
+        <!--Latest Article section ends-->
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">People Finder</h4>
-                    </div>
-                    <div class="modal-body">
-                        <!--Search section-->
-                        <iframe id="peopleFinderIframe" src="<?php global $base_url; print $base_url;?>/ldap-search" style="border:none;" height="600" width="570"></iframe>
-                        <!--Search section end-->
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-        <!--link section ends-->
 
     </div>
 

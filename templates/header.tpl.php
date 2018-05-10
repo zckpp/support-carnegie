@@ -1,13 +1,12 @@
 <div class="header-wrapper clearfix ">
     <div class="container">
         <div class="header col-md-3 col-sm-3 col-xs-6">
-
             <a href="<?php global $base_url; print $base_url;?>"><img src="<?php print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/logo_solid.png" /></a>
-
         </div>
 
         <nav class="menu col-md-9 col-sm-9 col-xs-6">
-            <a class="link" href="<?php if (isset($imageEditLink)) print $imageEditLink?>"><img src="<?php if (isset($photoURL)) print $photoURL ?>" class="profilePhoto"></a>
+            <!--user avatar-->
+            <a title="Edit Profile" class="link" href="<?php if (!empty($imageEditLink)) print $imageEditLink?>"><img src="<?php if (!empty($photoURL)) print $photoURL ?>" class="profilePhoto"></a>
             <?php if ($page['navigation']) :?>
                 <?php print render($page['navigation']); ?>
             <?php else : ?>

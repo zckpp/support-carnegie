@@ -1,14 +1,37 @@
 @charset "UTF-8";
 
-body a:hover {
-  text-decoration: none;
-  color: #23527c;
+body {
+  a:hover {
+    text-decoration: none;
+    color: #23527c;
+  }
+  font-family: 'Lato';
+  font-size: 16px;
+  p {
+    font-size: 18px;
+  }
+  a {
+    cursor: pointer;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: none;
+    font-weight: normal;
+  }
+  table {
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    tr:nth-child(odd) {
+      background: #fbfbf9;
+    }
+    td {
+      padding: 10px 10px !important;
+      border: 1px solid #e9edee !important;
+    }
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-transform: none;
-  font-weight: normal;
-}
 
 @media (min-width: 768px) and (max-width: 992px) {
   .container {
@@ -36,11 +59,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-body {
-  font-family: 'Lato';
-  font-size: 16px;
-}
-
 #page-container {
   h1, body h2 {
     font-family: 'Roboto Slab', serif;
@@ -55,32 +73,6 @@ body {
     h2 {
       font-size: 20px;
     }
-  }
-}
-
-p {
-  font-size: 18px;
-}
-
-a {
-  cursor: pointer;
-}
-
-p a {
-  font-size: 20px;
-}
-
-table {
-  width: 100%;
-  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
-  tr:nth-child(odd) {
-    background: #fbfbf9;
-  }
-  td {
-    padding: 10px 10px !important;
-    border: 1px solid #e9edee !important;
   }
 }
 //disabled link
@@ -101,8 +93,8 @@ body #page-container nav li a.isDisabled {
   font-size: 36px;
   text-transform: uppercase;
 }
-/*set container*/
 
+/*set container*/
 #page-container {
   min-height: 100%;
   margin-bottom: -147px;
@@ -112,24 +104,9 @@ body #page-container nav li a.isDisabled {
     height: 147px;
   }
 }
-
-footer .top-bg {
-  top: 0px;
-}
-
 .search img {
   position: relative;
   display: block;
   margin: 0 auto;
   top: 200px;
-}
-
-body.not-front {
-  position: relative;
-}
-
-.not-front #footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
 }

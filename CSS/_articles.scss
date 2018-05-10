@@ -140,6 +140,9 @@
   label {
     display: inline;
   }
+  .ff-section-header {
+    font-size: 1.5em;
+  }
   .ff-form-main {
     max-width: 100%;
     .ff-page-row {
@@ -149,8 +152,8 @@
         padding-left: 20px;
         padding-right: 35%;
         padding-bottom: 40px;
-        &:nth-of-type(odd) {
-          background: #fbfbdd;
+        &:nth-of-type(even) {
+          background: #fff;
         }
       }
     }
@@ -177,6 +180,8 @@
     }
     input {
       padding: 5px 15px;
+      width: 260px;
+      max-width: 100%;
     }
     .ff-group-row > .ff-item-row {
       margin-top: 15px;
@@ -202,10 +207,11 @@
 #dvFastForms.ff-ui-dialog {
   left: 50% !important;
 }
-.ff-group-row.group-3 .ff-item-row {
-  &:last-of-type, &:nth-last-of-type(2) {
-    opacity: 0;
-  }
+//hide pre-filled field
+.page-node-4193 #dvFastForms .ff-form-main .ff-page-row .ff-group-row.group-3 {
+  opacity: 0;
+  height: 0;
+  padding: 0;
 }
 //visitor log dashboard
 table.logDashboard {
@@ -226,5 +232,23 @@ table.logDashboard {
   tbody {
     background-color: white;
     opacity: 0.9;
+  }
+}
+//groove HQ form
+.node-type-page {
+  form {
+    background: #fbfbdd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    .form-group {
+      margin-bottom: 15px;
+      padding: 20px 35% 20px 20px;
+      //&:nth-of-type(odd) {
+      //  background: #fbfbdd;
+      //}
+    }
+    button.btn {
+      margin: 0 0 20px 20px;
+    }
   }
 }
