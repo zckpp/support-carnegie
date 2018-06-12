@@ -8,6 +8,7 @@
     }
   }
 }
+//events node page
 .node-type-event, .page-events {
   .addtocal {
     max-width: 127px;
@@ -16,6 +17,9 @@
   }
   .item-list ul {
     list-style-type: none;
+  }
+  .node-teaser .field-type-image img {
+    border: none;
   }
 }
 

@@ -7,12 +7,9 @@
     $( document ).ready(function() {
         // Add accordion for login form
         if ($("body").hasClass("page-user-login")) {
-
-                $( ".saml_sp_drupal_login-links" ).insertBefore($("#user-login > div"));
-                $( "<h3>Or</h3>" ).insertBefore($("#user-login > div"));
-
-                $(".form-item-name, .form-item-pass, #edit-submit").addClass("collapse");
-                $( '<button class="btn btn-info" type="button" data-toggle="collapse" data-target=".collapse" aria-expanded="false">Login As Admin</button>' ).insertAfter($( "#user-login > div" ));
+            $( ".saml_sp_drupal_login-links" ).insertBefore($("#user-login--2 > div"));
+            $( ".saml_sp_drupal_login-links a" ).text("");
+            $(".form-item-name, .form-item-pass, #edit-actions--2").addClass("collapse");
         }
 
         // change search page language
@@ -49,6 +46,19 @@
         //     var f = document.getElementById('peopleFinderIframe');
         //     f.src = f.src;
         // });
+
+        //convert relative image url to absolute for hq feeds news
+        var image = ".node-type-event .content .field-name-body img";
+        if ($(image)) {
+            $(image).each(function () {
+                var rUrl = $(this).attr('src');
+                // if url is relative, change it to absolute
+                if (rUrl.indexOf("http") < 0) {
+                    rUrl = "https://carnegiescience.edu" + rUrl;
+                }
+                $(this).attr('src',rUrl);
+            })
+        }
 
 
     });

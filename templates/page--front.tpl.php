@@ -11,9 +11,9 @@
 
     <!--front page slideshow-->
     <?php $block = module_invoke('md_slider', 'block_view', 'md-slider-5ac4dfbb3f6b9'); if (!empty($block['content'])) {print render($block['content']);}  ?>
-    <div class="landingBanner">
-        <h1>Welcome to My Carnegie Portal</h1>
-    </div>
+<!--    <div class="landingBanner">-->
+<!--        <h1>Welcome to My Carnegie Portal</h1>-->
+<!--    </div>-->
 
     <!-- EOF: #header -->
 

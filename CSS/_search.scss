@@ -1,5 +1,4 @@
 /*search area*/
-
 input.form-text, textarea, select {
   background: white;
   border: 2px solid #c5dee4;
@@ -12,10 +11,6 @@ input.form-text, textarea, select {
 }
 
 #custom-blocks-search-block-form .form-submit, #edit-submit--2 {
-  position: absolute;
-  display: block;
-  top: 20px;
-  right: 0px;
   background-color: #96ca4f;
 }
 
@@ -119,7 +114,6 @@ ol.search-results div {
 }
 
 /*db search override*/
-
 .page-ldap-search {
   #page-title {
     display: none;

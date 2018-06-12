@@ -2,9 +2,8 @@
     <div class="container Footer">
         <div class="row">
             <div class="footer-image col-md-5 col-sm-3">
-                <a href="<?php print $base_url;?>"><img src="<?php print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/logo_solid.png" /></a>
-
-                <span>My Carnegie</span></div>
+                <a href="<?php print $base_url;?>"><img src="<?php print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/logo_my.png" /></a>
+            </div>
 
             <div class="footer-list col-md-2 col-sm-4 col-xs-4">
                 <ul class="footer-menu">

@@ -113,10 +113,10 @@ ul.sf-menu.sf-accordion.sf-expanded {
   z-index: 999;
   padding: 10px 0;
   img {
-    width: 240px;
+    //width: 240px;
     position: relative;
     box-sizing: content-box;
-    margin-top: 5px;
+    margin-top: 1.4em;
   }
   .btn {
     position: absolute;
@@ -255,6 +255,7 @@ ul.sf-menu .sf-depth-2 a.menuparent:after {
 #page-container nav li > a {
   &:hover, &:focus {
     background-color: white;
+    opacity: 0.5;
   }
 }
 

@@ -42,17 +42,19 @@
   ul.saml_sp_drupal_login-links {
     list-style-type: none;
     padding: 0;
+    margin-top: 25px;
     a {
       font-size: 18px;
-      padding: 15px 23px;
-      background-color: #2a68af;
+      padding: 35px 70px;
+      background: url(/sites/all/themes/startupgrowth_ciw/image/login.png) no-repeat;
+      background-size: cover;
+      min-width: 290px;
       color: #ffffff;
       display: inline-block;
       line-height: 1;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
-      min-width: 160px;
       border: none;
       margin: 10px 0;
       text-align: center;
@@ -67,7 +69,24 @@
   input.form-text {
     padding: 10px 15px;
   }
+  .logIn {
+    width: 100%;
+    min-height: 300px;
+    max-width: 500px;
+    -webkit-box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 4px;
+    border-bottom: 2px solid #3b5da5;
+    h1 {
+      font-size: 3em;
+    }
+  }
 }
+
+
 /*Webform for rentals*/
 .node-type-webform {
   #block-system-main {
@@ -93,7 +112,7 @@
   min-width: 350px;
 }
 /*IT dashboard*/
-.page-node-3179 {
+.page-node-4572 {
   .header .circle {
     border-radius: 0;
     background: white;
@@ -106,11 +125,20 @@
       background: lightgreen;
       border: none;
     }
+    &.blue {
+      border-radius: 0;
+      background: #5eb6cd;
+      border: none;
+    }
   }
   .list-group-item {
+    border: none;
     background: lightgreen;
     &.first {
       background: white;
+    }
+    &.eb {
+      background: #5eb6cd;
     }
   }
   .list-group {
@@ -141,7 +169,8 @@
     display: inline;
   }
   .ff-section-header {
-    font-size: 1.5em;
+    font-size: 2em;
+    color: #163671;
   }
   .ff-form-main {
     max-width: 100%;
@@ -250,5 +279,15 @@ table.logDashboard {
     button.btn {
       margin: 0 0 20px 20px;
     }
+  }
+}
+//event page
+.page-events {
+  input.form-text, textarea, select {
+    padding: 6px 15px;
+  }
+  .views-exposed-form .views-exposed-widget .form-submit {
+    margin-top: 1.9em;
+    padding: 12px 23px;
   }
 }

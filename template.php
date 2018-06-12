@@ -37,7 +37,6 @@ function startupgrowth_ciw_preprocess_page(&$vars, $hook) {
 
 }
 
-//add user role to body class
 function startupgrowth_ciw_preprocess_html(&$vars) {
     global $user;
     if ($user->roles) {
