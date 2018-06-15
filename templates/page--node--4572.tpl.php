@@ -22,8 +22,8 @@
             //get time of now and tomorrow
             $now = time();
             $tomorrow = strtotime('tomorrow');
-
             $result = null;
+
             foreach ($events as $key => $event) {
                 $title = $event->sum;
                 $time = $event->time;
@@ -51,8 +51,6 @@
                     $organizer = '';
                 }
 
-
-
                 //only show today's current events
                 if ($now < $timestamp && $timestamp < $tomorrow) {
 
@@ -60,8 +58,7 @@
                     if (1 == $room) {
                         $result = '<li class="first list-group-item"><h1>' . $time . ' to ' . $end . '&nbsp&nbsp&nbsp' . $title . '</h1><p>Location: ' . $loc . ' <br><strong>' . $organizer . '</strong></p></li>';
                         print $result;
-                    } elseif (2 == $room) {
-                        //3rd fl events
+                    } elseif (2 == $room) {//3rd fl events
                         $result = '<li class="first list-group-item"><h1>' . $time . ' to ' . $end . '&nbsp&nbsp&nbsp' . $title . '</h1><p>Location: ' . $loc . ' <br><strong>' . $organizer . '</strong></p></li>';
                         print $result;
                     } else {

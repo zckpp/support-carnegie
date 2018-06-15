@@ -278,5 +278,5 @@ ol.search-results div.col-md-8.fadein { opacity: 1; }
 .node-type-policy .sidebar h2 { font-size: 2em; font-weight: normal; }
 .node-type-policy .sidebar #block-block-16 { padding: 0 20px 40px; background: #163671; color: white; }
 .node-type-policy .sidebar #block-block-16 a { color: white; text-decoration: underline; }
-.node-type-policy .sidebar #block-views-policy-development-block { margin-top: 40px; padding: 20px 20px 40px; -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); }
-.node-type-policy .sidebar #block-views-policy-development-block a { color: #163671; text-decoration: underline; }
+.node-type-policy .sidebar #block-views-policy-development-block, .node-type-policy .sidebar #block-custom-blocks-related-policy { margin-top: 40px; padding: 20px 20px 40px; -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); }
+.node-type-policy .sidebar #block-views-policy-development-block a, .node-type-policy .sidebar #block-custom-blocks-related-policy a { color: #163671; text-decoration: underline; }
