@@ -16,9 +16,10 @@
       }
     }
 
-    //promoted policy
+    //right sidebar blocks
     #block-views-policy-development-block,
-    #block-custom-blocks-related-policy {
+    #block-custom-blocks-related-policy,
+    #block-custom-blocks-policy-contact {
       margin-top: 40px;
       padding: 20px 20px 40px;
       -webkit-box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
@@ -27,6 +28,9 @@
       a {
         color: #163671;
         text-decoration: underline;
+      }
+      .back {
+        cursor: pointer;
       }
     }
   }

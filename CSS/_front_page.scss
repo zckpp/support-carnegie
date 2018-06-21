@@ -35,14 +35,14 @@
   }
   /*fast links*/
   .fastLinks {
+    @media screen and (min-width: 768px) {
+      min-height: 320px;
+    }
     h1 {
       font-family: 'Roboto Slab', serif;
     }
     ul {
-      max-width: 350px;
       list-style-type: decimal;
-      padding: 10px 15px 20px 30px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       a {
         color: black;
         font-weight: bold;
@@ -63,6 +63,10 @@
         font-size: 20px;
       }
     }
+    ul.clearfix {
+      padding: 10px 15px 20px 30px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
   }
   //calendar
   .view-calendar {
@@ -73,10 +77,9 @@
     }
   }
   //big peoplefinder icon
-  .bell {
+  .staff-directory {
     border: 7px solid white;
     border-radius: 10px;
-    max-width: 320px;
     -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
@@ -85,7 +88,9 @@
       text-align: center;
     }
     &:hover {
+      border-radius: 0;
       cursor: pointer;
+      transition: all 0.3s ease 0s;
       box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 9px 23px 0 rgba(0, 0, 0, 0.19);
     }
     img {
@@ -97,7 +102,7 @@
     background-color: #f2f2f2;
     .view-content .wrapper {
       padding: 30px;
-      margin: 25px;
+      margin: 25px 0px;
       background-color: white;
       min-height: 190px;
       -webkit-border-radius: 4px;
@@ -112,6 +117,7 @@
       &:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         cursor: pointer;
+        transition: all 0.3s ease 0s;
       }
     }
     h3 {
@@ -129,6 +135,10 @@
       -moz-border-radius: 100%;
       border-radius: 100%;
       left: 3%;
+    }
+    a {
+      color: #000;
+      font-weight: bold;
     }
   }
   footer {

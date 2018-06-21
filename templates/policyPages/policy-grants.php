@@ -21,7 +21,7 @@
     <a><h3>Carryover</h3></a>
     <a><h3>Effort Reporting (including salary cap per UG)</h3></a>
     <a><h3>Procurement</h3></a>
-    <a><h3>Cost Sharing</h3></a>
+    <a href="/node/4574"><h3>Cost Sharing</h3></a>
     <a><h3>Indirect Cost</h3></a>
     <a><h3>Reporting (financial & technical, invention, property etc.)</h3></a>
     <a><h3>Invoicing</h3></a>
@@ -29,6 +29,9 @@
     <a><h3>Responsible Conduct of Research (RCR)</h3></a>
     <a><h3>Business and Travel Expense reporting</h3></a>
     <a><h3>Closeout</h3></a>
+</div>
+<div class="project-list"><h2>Appendix</h2></div>
+<div class="project-list-content">
     <a><h3>Closeout checklist</h3></a>
     <a><h3>Award Review and Routing Process</h3></a>
     <a><h3>Receipt of Funds Process</h3></a>

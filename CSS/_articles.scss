@@ -291,3 +291,25 @@ table.logDashboard {
     padding: 12px 23px;
   }
 }
+//latest article page
+.view-id-latest_article {
+  .view-content .wrapper {
+    padding: 30px;
+    margin: 25px 50px 25px 0;
+    background-color: white;
+    min-height: 190px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    border-bottom: 2px solid #3b5da5;
+    -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    &:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      cursor: pointer;
+    }
+  }
+}

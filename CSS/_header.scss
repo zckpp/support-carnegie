@@ -155,16 +155,29 @@ ul.sf-menu.sf-accordion.sf-expanded {
     height: 10px;
   }
 }
-.menu {
-  .profilePhoto {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: 0;
-    border-radius: 50%;
-    z-index: 10;
-    @media screen and (max-width: 1020px) {
-      display: none;
+.header-wrapper {
+  .container {
+    position: relative;
+    .profilePhoto {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      right: 10px;
+      border-radius: 50%;
+      z-index: 10;
+      top: 30px;
+      @media screen and (max-width: 1020px) {
+        display: none;
+      }
+    }
+    ul.sf-menu {
+      @media screen and (min-width: 1020px) {
+        text-align: right;
+        margin-right: 30px;
+      }
+      ul {
+        text-align: center;
+      }
     }
   }
   //allow profile photo link to show
@@ -175,12 +188,11 @@ ul.sf-menu.sf-accordion.sf-expanded {
 
 @media screen and (max-width: 499px) {
   .header img {
-    width: 140px;
+    width: 200px;
     margin-top: 20px;
   }
 }
 /*menu*/
-
 ul.sf-menu {
   text-align: center;
   > li.sf-depth-1 {
