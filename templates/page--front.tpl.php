@@ -41,7 +41,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <h1>STAFF DIRECTORY</h1>
                         <div class="staff-directory">
-                            <a href="/ldap-search" target="_blank"><img src="<?php global $base_url; print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/icon-carnegie1.png" /></a>
+                            <a href="/ldap-search"><img src="<?php global $base_url; print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/icon-carnegie2.png" /></a>
                         </div>
                     </div>
 

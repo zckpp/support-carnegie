@@ -1,0 +1,36 @@
+.node-type-contact {
+  #page-title {
+    display: none;
+  }
+  .title {
+    color: #163671;
+    font-size: 2.5em;
+  }
+  .shadow-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 10px 0px 20px 15px;
+    margin-top: 40px;
+    h2 {
+      font-weight: bold;
+    }
+  }
+  .building-img {
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: right;
+    @media screen and (max-width: 768px) {
+      float: left;
+      margin-top: 20px;
+    }
+  }
+  .building-iframe {
+    max-width: 400px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: right;
+    margin-top: 30px;
+    @media screen and (max-width: 768px) {
+      float: left;
+    }
+  }
+}

@@ -26,13 +26,12 @@
     .cboxIframe{background:#fff;}
     #cboxError{padding:50px; border:1px solid #ccc;}
     #cboxLoadedContent{background:#000; padding:1px;}
-    #cboxLoadingGraphic{background:url(loading.gif) no-repeat center center;}
     #cboxLoadingOverlay{background:#000;}
     #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
     #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
 
     /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
-    #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(controls.png) no-repeat 0 0;}
+    #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px;}
 
     /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
     #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
@@ -52,9 +51,9 @@
 
 
 <div class="project-list"><h2>FINANCIAL</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Financial.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Financial.png"></a></div>
-<div class="project-list"><h2>GRANTS</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Grants.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Grants.png"></a></div>
-<div class="project-list"><h2>LEGAL</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Legal.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Legal.png"></a></div>
-<div class="project-list"><h2>HUMAN RESOURCES</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Resources.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Human Resources.png"></a></div>
+<div class="project-list"><h2>OFFICE OF SPONSORED PROGRAMS</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Grants1.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Grants1.png"></a></div>
+<div class="project-list"><h2>LEGAL</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Legal1.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Legal1.png"></a></div>
+<div class="project-list"><h2>HUMAN RESOURCES</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Human Resources.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Human Resources.png"></a></div>
 <div class="project-list"><h2>DEVELOPMENT</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Development.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Development.png"></a></div>
 <div class="project-list"><h2>OTHER</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Other.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Other.png"></a></div>
 <div class="project-list"><h2>ENDOWMENT</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Endowment.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Endowment.png"></a></div>
@@ -76,6 +75,6 @@
         lists.project.click(function () {
             return (this.tog = !this.tog) ? down($(this)) : up($(this));
         });
-        $(".project-list-content a").colorbox({rel:'group1',transition:"fade", width:"75%", height:"75%"});
+        $(".project-list-content a").colorbox({transition:"fade", width:"95%", height:"75%"});
     }(jQuery));
 </script>

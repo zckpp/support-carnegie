@@ -41,19 +41,13 @@
     top: 60px;
     box-shadow: 0 0 6px #000;
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 993px) {
-  #page-container nav bar-nav li.dropdown {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 993px) {
-  #page-container nav bar-nav li.dropdown .dropdown-menu {
-    position: relative;
-    width: 100%;
+    li.dropdown {
+      width: 100%;
+      .dropdown-menu {
+        position: relative;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -228,7 +222,6 @@ ul.sf-menu {
 }
 
 /*override superfish*/
-
 .sf-menu {
   &.sf-horizontal.sf-shadow ul, &.sf-vertical.sf-shadow ul, &.sf-navbar.sf-shadow ul ul {
     background: none;
@@ -284,4 +277,22 @@ body #page-container nav li a {
   -ms-transform: scale(1.4, 1);
   -o-transform: scale(1.4, 1);
   transform: scale(1.4, 1);
+}
+
+@media screen and (max-width: 500px) {
+  ul.sf-menu.sf-accordion.sf-expanded {
+    left: -200px !important;
+  }
+  ul.sf-menu.sf-accordion.sf-expanded, ul.sf-menu.sf-accordion li.sf-expanded > ul {
+    width: 260px;
+  }
+  ul.sf-menu li a.menuparent:after {
+    right: 5px;
+  }
+  #page-container nav li > a:hover, #page-container nav li > a:focus {
+    opacity: 1;
+  }
+  .front .fastLinks ul i {
+    display: none;
+  }
 }

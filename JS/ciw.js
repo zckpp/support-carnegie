@@ -14,7 +14,8 @@
 
         // change search page language
         if ($("body").hasClass("page-ldap-search")) {
-            $( ".content h1" ).text('Staff Directory');
+            $('<img src="/sites/all/themes/startupgrowth_ciw/image/icon-search.png" class="icon" />').insertAfter('.content h1');
+            $('#edit-keys-2').attr("placeholder","Enter name or key words");
 
         }
 

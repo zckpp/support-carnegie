@@ -22,12 +22,25 @@
     border: 3px solid darkgrey;
   }
 }
-.page-ldap-search .node-teaser .field-type-image img {
-  border: none;
-  border-radius: 50%;
-}
-.page-ldap-search .node-teaser h3.field-name-field-user-job-title {
-  margin-top: 0;
+.page-ldap-search {
+  .node-teaser {
+    .field-type-image img {
+      border: none;
+      border-radius: 50%;
+    }
+    h3.field-name-field-user-job-title {
+      margin-top: 0;
+    }
+    .field-name-field-user-bio {
+      margin-top: 25px;
+      .field-label {
+        margin-bottom: 5px;
+      }
+      a:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
 .role-authenticated-user.page-node-edit.node-type-person div.form-item-title,
 .role-authenticated-user.page-node-edit.node-type-person ul.vertical-tabs-list,

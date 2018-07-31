@@ -4,7 +4,7 @@
     <!-- #header -->
     <div class="header-wrapper clearfix ">
         <div class="container">
-            <div class="header col-md-4 col-sm-4 col-xs-6">
+            <div class="header col-md-3 col-sm-3 col-xs-6">
                 <a href="<?php global $base_url; print $base_url;?>"><img src="<?php print $base_url;?>/sites/all/themes/startupgrowth_ciw/image/logo_my.png" /></a>
             </div>
         </div>
@@ -34,7 +34,8 @@
 
                 <h1>Sign In</h1>
                 <?php $form = drupal_get_form('user_login'); print drupal_render($form); ?>
-                <button class="btn" type="button" style="margin-top: 25px;background: white;" data-toggle="collapse" data-target=".collapse" aria-expanded="false">Sign in As Admin</button>
+<!--                <p><small>Please make sure to use Carnegie Google account and try clearing browser cache if you can not log in.</small></p>-->
+                <button class="btn" type="button" style="margin-top: 25px;background: white; display: none" data-toggle="collapse" data-target=".collapse" aria-expanded="false">Sign in As Admin</button>
 
 
             </div>

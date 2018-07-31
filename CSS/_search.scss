@@ -118,6 +118,16 @@ ol.search-results div {
   #page-title {
     display: none;
   }
+  .content h1, #search-api-page-search-form label {
+    display: none;
+  }
+  .icon {
+    max-width: 200px;
+    margin-top: 20px;
+  }
+  #edit-keys-2::placeholder {
+    font-size: 16px;
+  }
   #page, &.not-front #main {
     padding-top: 0;
   }
