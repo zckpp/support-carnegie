@@ -33,7 +33,6 @@
   display: none;
   font-family: Lato;
 }
-
 /*Login Page*/
 .not-logged-in .tabs.primary {
   display: none;
@@ -85,8 +84,6 @@
     }
   }
 }
-
-
 /*Webform for rentals*/
 .node-type-webform {
   #block-system-main {
@@ -109,7 +106,7 @@
 }
 //date picker width override
 #ui-datepicker-div {
-  min-width: 350px;
+  min-width: 367px;
 }
 /*IT dashboard*/
 .page-node-4572 {
@@ -157,8 +154,8 @@
     width: 800px;
   }
 }
-
 #dvFastForms {
+  font-family: Lato;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -171,6 +168,9 @@
   .ff-section-header {
     font-size: 2em;
     color: #163671;
+  }
+  .ff-col-2 {
+    min-width: 47%;
   }
   .ff-form-main {
     max-width: 100%;
@@ -219,6 +219,7 @@
       border: none;
       display: block;
       background-color: #213870;
+      color:white;
     }
     .ff-form-main a.lookup-link {
       width: 240px;
@@ -281,16 +282,6 @@ table.logDashboard {
     }
   }
 }
-//event page
-.page-events {
-  input.form-text, textarea, select {
-    padding: 6px 15px;
-  }
-  .views-exposed-form .views-exposed-widget .form-submit {
-    margin-top: 1.9em;
-    padding: 12px 23px;
-  }
-}
 //latest article page
 .view-id-latest_article {
   .view-content .wrapper {
@@ -324,7 +315,19 @@ table.logDashboard {
   }
 }
 // Ceridian Page
-.page-node-4756 {
+.page-node-4756, .page-node-4765 {
+  .project-list h2 {
+    margin-top: 0;
+  }
+  #page-title,
+  #main header {
+    display: none;
+  }
+  iframe {
+    box-shadow: -2px 7px 35px 1px rgba(0,0,0,0.75);
+    border: none;
+    max-width: 100%;
+  }
   #block-block-17 {
     padding: 0 20px 40px;
     background: #163671;
@@ -332,5 +335,39 @@ table.logDashboard {
     a {
       color: white;
     }
+  }
+  .block-quicktabs {
+    .quicktabs-tabs {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}
+ul.menu {
+  li {
+    a.active {
+      background-color: #2a68af;
+      color: #ffffff;
+    }
+  }
+}
+#block-superfish-3 {
+  ul.sf-menu {
+    text-align: left;
+  }
+}
+//hr page
+#superfish-3 {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  li {
+    z-index: 0;
   }
 }
