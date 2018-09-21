@@ -58,23 +58,3 @@
 <div class="project-list"><h2>OTHER</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Other.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Other.png"></a></div>
 <div class="project-list"><h2>ENDOWMENT</h2></div><div class="project-list-content"><a href="/sites/all/themes/startupgrowth_ciw/image/matrix/Endowment.png"><img src="/sites/all/themes/startupgrowth_ciw/image/matrix/Endowment.png"></a></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
-<script>
-    (function ($) {
-        // Variables Here
-        lists                = {};
-        lists.project = $(".project-list");
-        function down (el) {
-            el.next().slideDown();
-            el.addClass('active');
-        }
-
-        function up (el) {
-            el.next().slideUp();
-            el.removeClass('active');
-        }
-        lists.project.click(function () {
-            return (this.tog = !this.tog) ? down($(this)) : up($(this));
-        });
-        $(".project-list-content a").colorbox({transition:"fade", width:"95%", height:"75%"});
-    }(jQuery));
-</script>

@@ -38,22 +38,3 @@
     <a><h3>Agency prior approval Matrix</h3></a>
     <a><h3>Budget Templates</h3></a>
 </div>
-<script>
-    (function ($) {
-        // Variables Here
-        lists                = {};
-        lists.project = $(".project-list");
-        function down (el) {
-            el.next().slideDown();
-            el.addClass('active');
-        }
-
-        function up (el) {
-            el.next().slideUp();
-            el.removeClass('active');
-        }
-        lists.project.click(function () {
-            return (this.tog = !this.tog) ? down($(this)) : up($(this));
-        });
-    }(jQuery));
-</script>

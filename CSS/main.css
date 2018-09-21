@@ -21,6 +21,8 @@ body {
     body #page-container a:hover {
       text-decoration: none;
       color: #23527c; }
+    body #page-container .tooltip {
+      font-family: 'Lato'; }
     body #page-container p {
       font-size: 18px; }
     body #page-container a {
@@ -41,10 +43,10 @@ body {
     body #page-container mark, body #page-container .mark {
       background-color: yellow; }
     body #page-container nav li a.isDisabled {
+      text-align: center;
       cursor: not-allowed;
       opacity: 0.5;
       text-decoration: none;
-      pointer-events: none;
       color: grey; }
     @media screen and (min-width: 768px) {
       body #page-container .menuParent {
@@ -278,6 +280,8 @@ ul.sf-menu .sf-depth-2 a.menuparent:after {
 body #page-container nav li a {
   background-color: white;
   opacity: 0.9; }
+  body #page-container nav li a:visited {
+    color: black; }
 
 .sf-accordion-toggle span {
   font-size: 30px;
@@ -751,6 +755,19 @@ ul.menu li a.active {
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); }
   #superfish-3 li {
     z-index: 0; }
+    #superfish-3 li a:hover {
+      color: white; }
+
+.hr-person.row {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 0 30px 10px;
+  margin-bottom: 30px; }
+  .hr-person.row .field-label {
+    float: left; }
+  .hr-person.row img {
+    margin-top: 50px; }
+  .hr-person.row h3 {
+    margin-top: 0; }
 
 /*search area*/
 input.form-text, textarea, select {
@@ -969,7 +986,7 @@ ol.search-results div.col-md-8 {
       color: #4187d1; }
 
 #block-search-api-page-policy-search-page {
-  padding: 30px 10px;
+  padding: 30px 20px;
   margin: 25px 0px;
   background-color: white;
   min-height: 190px;
@@ -981,6 +998,8 @@ ol.search-results div.col-md-8 {
   -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); }
+  #block-search-api-page-policy-search-page h2.title {
+    font-size: 28px; }
   #block-search-api-page-policy-search-page input.form-text {
     border-radius: 4px;
     padding: 14px 15px;

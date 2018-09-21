@@ -1,2 +1,0 @@
-Change URL:
-SAML, GrooveHQ, IT Dashboard, Visitor Log(admin)

@@ -30,6 +30,9 @@ body {
       text-decoration: none;
       color: #23527c;
     }
+    .tooltip {
+      font-family: 'Lato';
+    }
     p {
       font-size: 18px;
     }
@@ -57,12 +60,14 @@ body {
       background-color: yellow;
     }
     //disabled link
-    nav li a.isDisabled {
-      cursor: not-allowed;
-      opacity: 0.5;
-      text-decoration: none;
-      pointer-events: none;
-      color: grey;
+    nav li {
+      a.isDisabled {
+        text-align: center;
+        cursor: not-allowed;
+        opacity: 0.5;
+        text-decoration: none;
+        color: grey;
+      }
     }
     @media screen and (min-width: 768px) {
       .menuParent {

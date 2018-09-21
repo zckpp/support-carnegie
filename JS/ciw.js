@@ -6,7 +6,7 @@
 
     $( document ).ready(function() {
         // Add accordion for login form
-        if ($("body").hasClass("page-user-login")) {
+        if ($('body').hasClass("page-user-login")) {
             $( ".saml_sp_drupal_login-links" ).insertBefore($("#user-login--2 > div"));
             $( ".saml_sp_drupal_login-links a" ).text("");
             $(".form-item-name, .form-item-pass, #edit-actions--2").addClass("collapse");
@@ -42,12 +42,6 @@
             $(this).children().last().find('a')[0].click();
         })
 
-        // click to refresh people finder iframe
-        // $('.front .close').click(function () {
-        //     var f = document.getElementById('peopleFinderIframe');
-        //     f.src = f.src;
-        // });
-
         //convert relative image url to absolute for hq feeds news
         var image = ".node-type-event .content .field-name-body img";
         if ($(image)) {
@@ -61,9 +55,35 @@
             })
         }
 
+        //tooltip function
+        $('.tooltip').tooltip();
 
+        //disable click button
+        $('.isDisabled').attr("href","javascript: void(0)");
+
+        // Accordion
+        const lists = $(".project-list");
+        function down (el) {
+            el.next().slideDown();
+            el.addClass('active');
+        }
+        function up (el) {
+            el.next().slideUp();
+            el.removeClass('active');
+        }
+        lists.click(function () {
+            return ($(this).hasClass('active')) ? up($(this)) : down($(this));
+        });
+        // Open accordion based on url query string parameter
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('action')) {
+            var list_id = "#" + urlParams.get('action');
+            down($(list_id));
+            $('html, body').animate({
+                scrollTop: $(list_id).offset().top
+            }, 1000);
+        }
     });
-
 }(jQuery));
 
 

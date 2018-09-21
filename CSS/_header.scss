@@ -267,6 +267,9 @@ ul.sf-menu .sf-depth-2 a.menuparent:after {
 body #page-container nav li a {
   background-color: white;
   opacity: 0.9;
+  &:visited {
+    color: black;
+  }
 }
 
 .sf-accordion-toggle span {

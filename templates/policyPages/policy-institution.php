@@ -21,7 +21,7 @@
     <a href="/node/4658"><h3>Conduct in Research</h3></a>
 </div>
 
-<div class="project-list"><h2>Human Resources</h2></div>
+<div class="project-list" id="humanResources"><h2>Human Resources</h2></div>
 <div class="project-list-content">
     <h2>HR Policies</h2>
     <a href="/node/4576"><h3>Reporting Violations</h3></a>
@@ -173,24 +173,3 @@
     <a href="/node/4661"><h3>Record Retention</h3></a>
     <a href="/node/4662"><h3>Safety and Facilities</h3></a>
 </div>
-
-
-<script>
-    (function ($) {
-        // Variables Here
-        lists                = {};
-        lists.project = $(".project-list");
-        function down (el) {
-            el.next().slideDown();
-            el.addClass('active');
-        }
-
-        function up (el) {
-            el.next().slideUp();
-            el.removeClass('active');
-        }
-        lists.project.click(function () {
-            return (this.tog = !this.tog) ? down($(this)) : up($(this));
-        });
-    }(jQuery));
-</script>
