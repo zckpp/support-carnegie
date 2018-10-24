@@ -541,7 +541,7 @@ footer.footer {
   .page-user-login .logIn h1 {
     font-size: 3em; }
 
-/*Webform for rentals*/
+/*WebForm for rentals*/
 .node-type-webform #block-system-main {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -589,6 +589,14 @@ footer.footer {
 @media (min-width: 1400px) {
   .page-node-4572 .container {
     width: 1400px; } }
+
+.page-node-4217 .ff-fileupload-drop-area,
+.page-node-4217 #dvFastForms .ff-form-main select,
+.page-node-4217 #dvFastForms .ff-form-main input,
+.page-node-4217 #dvFastForms .ff-form-main textarea {
+  width: 300px; }
+.page-node-4217 .ff-col-1 {
+  min-width: 50%; }
 
 /*legal form*/
 @media (min-width: 768px) {
@@ -765,9 +773,32 @@ ul.menu li a.active {
   .hr-person.row .field-label {
     float: left; }
   .hr-person.row img {
-    margin-top: 50px; }
+    margin-top: 30px; }
   .hr-person.row h3 {
     margin-top: 0; }
+
+.page-node-6466 #page-title {
+  display: none; }
+.page-node-6466 .logo-container {
+  text-align: center;
+  background-color: #eee;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  padding-top: 20px; }
+  .page-node-6466 .logo-container .bookmarks {
+    margin-bottom: 20px; }
+  .page-node-6466 .logo-container h2 {
+    border-top: #d7d7d7 1px solid;
+    width: 76%;
+    margin: 0 auto;
+    padding: 10px; }
+  .page-node-6466 .logo-container .logo-row {
+    text-align: center;
+    margin-bottom: 50px; }
+    .page-node-6466 .logo-container .logo-row img {
+      max-width: 300px;
+      margin-bottom: 15px; }
 
 /*search area*/
 input.form-text, textarea, select {

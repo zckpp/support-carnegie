@@ -84,7 +84,7 @@
     }
   }
 }
-/*Webform for rentals*/
+/*WebForm for rentals*/
 .node-type-webform {
   #block-system-main {
     -webkit-border-radius: 4px;
@@ -146,6 +146,18 @@
     .container {
       width: 1400px;
     }
+  }
+}
+//Grants form
+.page-node-4217 {
+  .ff-fileupload-drop-area,
+  #dvFastForms .ff-form-main select,
+  #dvFastForms .ff-form-main input,
+  #dvFastForms .ff-form-main textarea {
+    width: 300px;
+  }
+  .ff-col-1 {
+    min-width: 50%;
   }
 }
 /*legal form*/
@@ -233,7 +245,6 @@
   color: white;
   padding: 5px 10px;
 }
-
 #dvFastForms.ff-ui-dialog {
   left: 50% !important;
 }
@@ -382,9 +393,40 @@ ul.menu {
     float: left;
   }
   img {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   h3 {
     margin-top: 0;
+  }
+}
+//logo page
+.page-node-6466 {
+  #page-title {
+    display: none;
+  }
+  .logo-container {
+    text-align: center;
+    background-color: #eee;
+    -webkit-box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    padding-top: 20px;
+    .bookmarks {
+      margin-bottom: 20px;
+    }
+    h2 {
+      border-top: #d7d7d7 1px solid;
+      width: 76%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    .logo-row {
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+        max-width: 300px;
+        margin-bottom: 15px;
+      }
+    }
   }
 }

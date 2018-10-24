@@ -1,6 +1,6 @@
 <div class="hr-person row">
     <div class="col-md-2 col-sm-2 col-xs-4 fadein">
-        <a href="/person/ajames"><img typeof="foaf:Image" src="https://mycarnegie.carnegiescience.edu/sites/default/files/styles/small/public/directory/unnamed.png?itok=Q1BX7tAe" width="100" height="100" alt=""></a>
+        <a href="/person/ajames"><img src="/sites/default/files/styles/small/public/directory/unnamed.png?itok=Q1BX7tAe" width="100" height="100" alt=""></a>
     </div>
 
     <div class="fadein col-md-10 col-sm-10 col-xs-12">
@@ -35,7 +35,7 @@
     <div class="col-md-2 col-sm-2 col-xs-4 fadein">
 
         <a href="/person/ywhite">
-            <img typeof="foaf:Image" src="https://mycarnegie.carnegiescience.edu/sites/default/files/styles/small/public/directory/WHITE.Yulonda_0.jpg?itok=hXvqWDIx" width="100" height="100" alt="">
+            <img src="/sites/default/files/styles/small/public/directory/WHITE.Yulonda_0.jpg?itok=hXvqWDIx" width="100" height="100" alt="">
         </a>
 
     </div>
@@ -67,7 +67,7 @@
     <div class="col-md-2 col-sm-2 col-xs-6 fadein">
 
         <a href="/person/jwilliams">
-            <img typeof="foaf:Image" src="https://mycarnegie.carnegiescience.edu/sites/default/files/styles/small/public/directory/jackie.jpg?itok=RP0SN8d6" width="100" height="100" alt="">
+            <img src="/sites/default/files/styles/small/public/directory/jackie.jpg?itok=RP0SN8d6" width="100" height="100" alt="">
         </a>
 
     </div>
@@ -102,7 +102,7 @@
     <div class="col-md-2 col-sm-2 col-xs-4 fadein">
 
         <a href="/person/ctuma">
-            <img typeof="foaf:Image" src="https://mycarnegie.carnegiescience.edu/sites/default/files/styles/small/public/directory/ClareCarnegie1.jpg?itok=jKFDYZ6e" width="100" height="100" alt="">
+            <img src="/sites/default/files/styles/small/public/directory/ClareCarnegie1.jpg?itok=jKFDYZ6e" width="100" height="100" alt="">
         </a>
 
     </div>
@@ -135,7 +135,7 @@
     <div class="col-md-2 col-sm-2 col-xs-4 fadein">
 
         <a href="/person/gilmer">
-            <img typeof="foaf:Image" src="https://mycarnegie.carnegiescience.edu/sites/default/files/styles/small/public/default_images/avatar_2.png?itok=AU9nlZTu" width="100" height="100" alt="">
+            <img src="/sites/default/files/Lauren.png" width="100" alt="">
         </a>
 
     </div>
